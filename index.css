@@ -1,0 +1,122 @@
+.box-shadow {
+    width: 300px;
+    height: 200px;
+    /* border: 2px solid #fead4f; */
+    border: none;
+    padding: 5px;
+    background-color: cadetblue;
+    text-align: center;
+    box-shadow: -2px 4px 5px 8px #ce920e inset,
+        2px 3px 5px 4px #ce920e;
+    font-size: 30px;
+    text-shadow: 3px 2px 2px indianred;
+    box-sizing: border-box;
+}
+
+.transition {
+    width: 300px;
+    height: 200px;
+    /* border: 2px solid #fead4f; */
+    padding: 5px;
+    background-color: cadetblue;
+    border: none;
+    text-align: center;
+    box-shadow: -2px 4px 5px 8px cadetblue inset,
+        2px 3px 5px 4px cadetblue;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px indianred;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.transition:hover {
+    width: 500px;
+}
+
+.transform {
+    width: 300px;
+    height: 200px;
+    /* border: 2px solid #fead4f; */
+    padding: 5px;
+    margin: 150px;
+    background-color: #0961a5;
+    border: none;
+    text-align: center;
+    box-shadow: -2px 4px 5px 8px #0961a5 inset,
+        2px 3px 5px 4px #0961a5,
+        3px -5px 8px 9px #0961a5;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px indianred;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.transform:hover {
+    /* transform: scale(2,2); */
+    /* transform: skew(10deg,10deg); */
+    transform: rotate(360deg);
+}
+
+.translateX {
+    width: 300px;
+    height: 200px;
+    /* border: 2px solid #fead4f; */
+    padding: 5px;
+    margin: 150px;
+    background-color: #aee802;
+    border: none;
+    text-align: center;
+    box-shadow: -2px 4px 5px 8px #aee802 inset,
+        2px 3px 5px 4px #aee802,
+        3px -5px 8px 9px #aee802;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px indianred;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+    /* transition: transform 2s 1s; */
+    transition-timing-function: ease-in-out;
+    /* transform: translateX(500px) */
+}
+
+.translateX:hover {
+    transform: translateX(500px);
+}
+
+.box {
+    border: 2px solid red;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.Z-index0 {
+    width: 250px;
+    height: 200px;
+    background-color: purple;
+    z-index: -1;
+}
+
+.Z-index1 {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    position: relative;
+    top: -150px;
+    left: 0px;
+    z-index: +1;
+}
+
+/* 
+
+
+Exercise : 
+1.Create one box and apply box shadow properties and text shadow properties
+2.Create one box on hover it rotate 360deg
+3.Create one box it should move from its original position upto 500px
+4.Create one box it width should increase upto 400px and it should also have delay property"
+*/
